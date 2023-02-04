@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<style>
+
+  .rel{
+    position: relative;
+  }
+
+  .bottom-text {
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    font-weight: 800;
+    color: #fff
+
+  </style>
+
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center rel">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>{{profile.name}}</h1>
+      <p>I'm <span class="typed" data-typed-items="{{profile.job_title}}"></span></p>
+      <h6 class = "bottom-text typed">This website is proudly made by me with Django</h6>
+      
+    </div>
+
+
+  </section>
+  
+
+{% endblock content %}
