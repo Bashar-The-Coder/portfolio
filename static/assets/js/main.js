@@ -258,4 +258,28 @@
    */
   new PureCounter();
 
-})()
+})();
+
+/// progressbar
+
+ // Initialize the Python progress bar
+  var pythonProgressBar = new ProgressBar.Circle('#python-progress', {
+    color: '#4CAF50',
+    strokeWidth: 5,
+    trailWidth: 5,
+    duration: 2000,
+    easing: 'easeInOut'
+  });
+  pythonProgressBar.animate(0.9); // Set the progress to 90%
+
+  // Initialize the Django progress bar
+  var djangoProgressBar = new ProgressBar.Circle('#django-progress', {
+    color: '#2196F3',
+    strokeWidth: 5,
+    trailWidth: 5,
+    duration: 2000,
+    easing: 'easeInOut'
+  });
+  djangoProgressBar.animate(0.8); // Set the progress to 80%
+
+
