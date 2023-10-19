@@ -27,3 +27,7 @@ def services(request):
 
 def contact(request):
     return render(request, 'main/contact.html')
+
+
+def pdf_page(request):
+    return render(request, 'main/resume.html')
